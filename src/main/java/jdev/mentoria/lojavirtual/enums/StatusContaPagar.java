@@ -2,7 +2,7 @@ package jdev.mentoria.lojavirtual.enums;
 
 public enum StatusContaPagar {
 
-	COBRANCA("Pagar"), VENCIDA("Vencida"), ABERTA("Aberta"), QUITADA("Quitada"), NEGOCIADA("Renegociada");
+	COBRANCA("Pagar"), VENCIDA("Vencida"), ABERTA("Aberta"), QUITADA("Quitada"), NEGOCIADA("Renegociada"), ALUGUEL("Aluguel"), FUNCIONARIO("Funcionario");
 
 	private String descricao;
 	
