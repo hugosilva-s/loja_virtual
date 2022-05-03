@@ -25,35 +25,48 @@ public class Produto implements Serializable {
 	
 	private Long id;
 	
+	@Column(nullable = false)
 	private String tipoUnidade;
 	
+	@Column(nullable = false)
 	private String nome;
 	
+	@Column(nullable = false)
 	private Boolean ativo = Boolean.TRUE;
 	
 	//seta o tamanho da coluna no dB
-	@Column(columnDefinition = "text", length =  2000)
+	@Column(columnDefinition = "text", length =  2000, nullable = false)
 	private String descricao;
 	
 	/**Nota item nota produto - associar**/
 	
+	@Column(nullable = false)
 	private Double peso;
 	
+	@Column(nullable = false)
 	private Double largura;
 	
+	@Column(nullable = false)
 	private Double altura;
 	
+	@Column(nullable = false)
 	private Double profundidade;
 	
+	@Column(nullable = false)
 	private BigDecimal valorVenda = BigDecimal.ZERO;
 	
+	@Column(nullable = false)
 	private Integer qtEstoque = 0;
+	
 	
 	private Integer QtAlertaEstoque = 0;
 	
+	
 	private String LinkYoutube;
 	
+	
 	private Boolean alertaQtdeEstoque = Boolean.FALSE;
+	
 	
 	private Integer qtdeClique = 0;
 
