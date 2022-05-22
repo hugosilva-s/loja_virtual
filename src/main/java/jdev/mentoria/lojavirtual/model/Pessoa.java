@@ -22,7 +22,6 @@ import javax.persistence.SequenceGenerator;
 @SequenceGenerator(name = "seq_pessoa", sequenceName = "seq_pessoa", initialValue = 1, allocationSize = 1)
 public abstract class Pessoa implements Serializable {
 
-
 	private static final long serialVersionUID = 1L;
 	
 	@Id
